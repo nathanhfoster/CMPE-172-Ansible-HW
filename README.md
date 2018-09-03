@@ -3,6 +3,11 @@
 A ansible playbook that installs an Apache web server and displays a simple html page.
 Take a look at the demo here 34.210.22.13
 
+How to run
+```
+ansible-playbook apache-playbook.yml
+```
+
 ## Team
 - [Juan Castillo](https://github.com/juancstlm)
 - [Nathan Foster](https://github.com/strap8)

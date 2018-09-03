@@ -1,0 +1,13 @@
+- hosts: production
+  user: test
+  become: true
+  tasks:
+    - name: Copy files to remote host
+      copy:
+        src: dist/
+        dest: /var/www/html
+        mode: 0755
+  vars_files:
+    - vars/main.yml
+  roles:
+    - { role: geerlingguy.apache }
